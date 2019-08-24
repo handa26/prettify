@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+}
+
+.zone {
+	font-size: 2em;
+	transition: all 0.3s linear;
+}
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+
+/* Navigation Bar/Header */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.main-nav {
+	display: flex;
+	list-style: none;
+	font-size: 2em;
+	margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
+}
+.nav-right {
+    margin-left: auto;
+}
+.main-nav li {
+    padding: 20px;
+}
+.main-nav a {
+    color: black;
+    text-decoration: none;
+}
+.navbar {
+	background: #7abcff;
+}
+
+
+/* Cover */
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+.container > img {
+	width: 30rem;
+	margin-top: 200px;
+}
+
+
+/* Project Grid */
+.grid-wrapper {
+	display: grid;
+	margin-top: 180px;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+}
+.box > img {
+	width: 10rem;
+}
+.box {
+	padding: 100px;
+}
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+
+/* Footer */
+footer {
+	text-align: center;
+	margin-top: 40px;
+}
